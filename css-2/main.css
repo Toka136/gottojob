@@ -347,7 +347,7 @@ header .container-spec .flex:hover
     background: url(../images/close-up-young-business-team-working.jpg) no-repeat ;
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    min-height: 500px;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -485,7 +485,7 @@ font-size: 17px;
     color: var(--color3);
     margin-left: 5px;
 }
-@media (max-width:900px)
+@media (max-width:1000px)
 {
     .main-img .container-spec
     {
