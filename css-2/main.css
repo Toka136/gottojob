@@ -1,4 +1,4 @@
-body
+hbody
 {
     font-family: var(--main-font);
     font-size: 18px;
@@ -1971,7 +1971,7 @@ font-size: 17px;
 {
   width: 100%;
 }
-@media (max-width:769px)
+@media (max-width:900px)
 {
     .orange-sec .spec-container
     {
@@ -2167,7 +2167,7 @@ font-size: 17px;
         
     }
 }
-@media(max-width:769px)
+@media(max-width:900px)
 {
     .up-foot .container
     {
@@ -2188,7 +2188,7 @@ font-size: 17px;
         margin-left: 80px;
     }
 }
-@media (max-width:426px)
+@media (max-width:767px)
 {
     .up-foot .container
     {
@@ -2224,7 +2224,7 @@ font-size: 17px;
         margin-left: 0px;
     }
 }
-@media (max-width:376px)
+@media (max-width:424px)
 {
     .up-foot .container .div2,
     .up-foot .container .div3
