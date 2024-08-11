@@ -4848,8 +4848,8 @@ textarea.form-control-lg {
   .page-item:first-child .page-link,
   .page-item:not(:first-child) .page-link 
   {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     font-size: 12px;
   }
 }
