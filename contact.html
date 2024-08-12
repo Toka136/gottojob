@@ -12,6 +12,7 @@
 </head>
 <body>
     <header id="myhead">
+        <div class="big-container" id="big">
         <div class="container-spec">
             <div class="logo-links">
                 <div class="logo">
@@ -22,27 +23,31 @@
                     </div>
                 </div>
                 </div>
-                <div class="flex">
-                    <div class="lines">
-                        <span></span>
+                
+                    <button class="lines" id="button-line"  onclick="myFunction()" >
+                        <i class="fa-solid fa-bars"></i>
                     </div>
+                    
+              
+                <div class="flex" id="flex-header">
                     <div class="links">
                         <a href="index.html" >home page</a>
-                        <a href="about.html" >about gotto</a>
+                        <a href="about.html">about gotto</a>
                         <div class="a">
-                            <span class="active">page <i class="fa-solid fa-chevron-down"></i></span>
+                            <span>page <i class="fa-solid fa-chevron-down"></i></span>
                             <div class="page-a">
                                 <a href="job.html">job listing</a>
                             <a href="details.html">job details</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="">contact</a>
+                        <a href="contact.html"  class="active">contact</a>
                     </div>
                 <div class="sign">
                     <a href="">register</a>
                     <a href="" class="login">login</a>
                 </div>
                 </div>
+            </div>
         </div>
     </header>
     <div class="main-img-about">
@@ -221,4 +226,5 @@
             </div>
         </div>
       </footer>
+      <script src="test.js"></script>
     </body>

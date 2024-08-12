@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gotto job</title>
-     <link rel="stylesheet" href="css/bootstrap.css">
-     <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
     <link rel="stylesheet" href="css-2/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
@@ -12,6 +12,7 @@
 </head>
 <body>
     <header id="myhead">
+        <div class="big-container" id="big">
         <div class="container-spec">
             <div class="logo-links">
                 <div class="logo">
@@ -22,15 +23,18 @@
                     </div>
                 </div>
                 </div>
-                <div class="flex">
-                    <div class="lines">
-                        <span></span>
+                
+                    <button class="lines" id="button-line"  onclick="myFunction()" >
+                        <i class="fa-solid fa-bars"></i>
                     </div>
+                    
+              
+                <div class="flex" id="flex-header">
                     <div class="links">
                         <a href="index.html" class="active">home page</a>
                         <a href="about.html" >about gotto</a>
                         <div class="a">
-                            <span >page <i class="fa-solid fa-chevron-down"></i></span>
+                            <span>page <i class="fa-solid fa-chevron-down"></i></span>
                             <div class="page-a">
                                 <a href="job.html">job listing</a>
                             <a href="details.html">job details</a>
@@ -43,619 +47,491 @@
                     <a href="" class="login">login</a>
                 </div>
                 </div>
+            </div>
         </div>
     </header>
-   <div class="main-img">
-    <div class="container-spec">
-        <div class="left-text">
-            <p>Are you looking for your dream job?</p>
-            <h1>Online Platform. </h1>
-            <h1> Best Job portal</h1>
-            <a href="#browse">browse categories</a>
-        </div>
-        <div class="right-text">
-            <h1>Search your dream job</h1>
-            <form action="">
-                <div class="input1">
-                    <i class="fa-regular fa-user"></i>
-                <input type="text" placeholder="job title" name="job title" required>
-                </div>
-                <div class="input1">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="location" name="location" required></div>
-                <input type="submit" value="find a job">
-            </form>
-           <div class="pop">
-            <span>Popular keywords:</span>
-            <a href="">web design </a>
-            <a href="">markting</a>
-            <a href="">customer support</a>
-           </div>
+    <div class="main-img">
+        <div class="container-spec">
+            <div class="left-text">
+                <p>Are you looking for your dream job?</p>
+                <h1>Online Platform. </h1>
+                <h1> Best Job portal</h1>
+                <a href="#browse">browse categories</a>
+            </div>
+            <div class="right-text">
+                <h1>Search your dream job</h1>
+                <form action="">
+                    <div class="input1">
+                        <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="job title" name="job title" required>
+                    </div>
+                    <div class="input1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="location" name="location" required></div>
+                    <input type="submit" value="find a job">
+                </form>
+            <div class="pop">
+                <span>Popular keywords:</span>
+                <a href="">web design </a>
+                <a href="">markting</a>
+                <a href="">customer support</a>
+            </div>
+            </div>
         </div>
     </div>
-   </div>
-   <div class="browse-cat" id="browse">
-    <div class="container">
-       <h1>Browse by Categories</h1>
-       <div class="flex">
-        <div class="div1">
-            <i class="fa-regular fa-folder-closed"></i>
-            <p>web design</p>
+    <div class="browse-cat" id="browse">
+        <div class="container">
+        <h1>Browse by Categories</h1>
+        <div class="flex">
+            <div class="div1">
+                <i class="fa-regular fa-folder-closed"></i>
+                <p>web design</p>
+            </div>
+            <div class="div2">
+                <i class="fa-brands fa-twitch"></i>
+                <p>markting</p>
+            </div>
+            <div class="div3">
+                <i class="fa-solid fa-circle-play"></i>
+                <p>video</p>
+            </div>
+            <div class="div4">
+                <i class="fa-solid fa-globe"></i>
+                <p>website</p>
+            </div>
+            <div class="div5">
+                <i class="fa-solid fa-user-group"></i>
+                <p>customer support</p>
+            </div>
         </div>
-        <div class="div2">
-            <i class="fa-brands fa-twitch"></i>
-            <p>markting</p>
-        </div>
-        <div class="div3">
-            <i class="fa-solid fa-circle-play"></i>
-            <p>video</p>
-        </div>
-        <div class="div4">
-            <i class="fa-solid fa-globe"></i>
-            <p>website</p>
-        </div>
-        <div class="div5">
-            <i class="fa-solid fa-user-group"></i>
-            <p>customer support</p>
-        </div>
-       </div>
-    </div>
-   </div>
-   <div class="intro text-primary">
-    <div class="container">
-        <div class="div1">
-           <div class="text">
-            <p>Julia Ward</p>
-            <h2>Investor</h2>
-           </div>
-        </div>
-        <div class="div2">
-            <h2>introduction Gotto</h2>
-            <p>Gotto Job is a free website template for job portals. This layout is based on Bootstrap 5 CSS framework. Thank you for visiting <a href="https://www.tooplate.com/">Tooplate website.</a> Images are from  <a href="https://www.freepik.com/">FreePik</a>  website.</p>
-            <a href="about.html" class="get">Get know us</a>
-            <a href="#" class="explore">explore jobs</a>
-        </div>
-        <div class="div3">
-         <a href=""><i class="fa-brands fa-instagram"></i> @ gotta</a>
         </div>
     </div>
-   </div>
-   <div class="feature">
-    <div class="container">
-        <div class="title">
-            <h1>Featured Jobs</h1>
-        <p><span class="a">Over 10k opening jobs</span> Feel free to download and use our free </p>
-        <p>HTML templates from Tooplate website.</p>
-        </div>
-        <div class="div1">
-            <img src="images/logos/google.png" alt="">
+    <div class="intro text-primary">
+        <div class="container">
+            <div class="div1">
             <div class="text">
-                <p>Technical Lead</p>
-               <div class="text-flex">
-                <div class="text2">
-                    <div class="span">
-                        <span><i class="fa-solid fa-location-dot"></i> Kuala, Malaysia</span>
-                    <span><i class="fa-regular fa-clock"></i>10 hours ago</span>
-                    <span><i class="fa-regular fa-money-bill-1"></i> $20k</span>
-                    </div>
-                    <div class="text2-links">
-                     <a href="" class="inter">intership</a>
-                     <a href="" class="free">freelance</a>
-                     
-                    </div>
- 
-                 </div>
-                 <a href="" class="apply">apply now</a>
-               </div>
+                <p>Julia Ward</p>
+                <h2>Investor</h2>
+            </div>
+            </div>
+            <div class="div2">
+                <h2>introduction Gotto</h2>
+                <p>Gotto Job is a free website template for job portals. This layout is based on Bootstrap 5 CSS framework. Thank you for visiting <a href="https://www.tooplate.com/">Tooplate website.</a> Images are from  <a href="https://www.freepik.com/">FreePik</a>  website.</p>
+                <a href="about.html" class="get">Get know us</a>
+                <a href="#" class="explore">explore jobs</a>
+            </div>
+            <div class="div3">
+            <a href=""><i class="fa-brands fa-instagram"></i> @ gotta</a>
             </div>
         </div>
-        <div class="div1" id="active2">
-            <img src="images/logos/apple.png" alt="">
-            <div class="text">
-                <p>Business Director</p>
-               <div class="text-flex">
-                <div class="text2">
-                   <div class="span">
-                    <span><i class="fa-solid fa-location-dot"></i> California, USA</span>
-                    <span><i class="fa-regular fa-clock"></i>1 day ago</span>
-                    <span><i class="fa-regular fa-money-bill-1"></i> $90k</span>
-                   </div>
-                    <div class="text2-links">
-                     <a href="" class="inter">senior</a>
-                     <a href="" class="free">full time</a>
-                     
-                    </div>
- 
-                 </div>
-                 <a href="" class="apply">apply now</a>
-               </div>
-            </div>
-        </div>
-        <div class="div1">
-            <img src="images/logos/meta.png" alt="">
-            <div class="text">
-                <p>HR Manager</p>
-               <div class="text-flex">
-                <div class="text2">
-                    <div class="span">
-                        <span><i class="fa-solid fa-location-dot"></i> Tower, Paris</span>
-                    <span><i class="fa-regular fa-clock"></i>22 hours ago</span>
-                    <span><i class="fa-regular fa-money-bill-1"></i> $50k</span>
-                    </div>
-                    <div class="text2-links">
-                     <a href="" class="inter">junior</a>
-                     <a href="" class="free">contract</a>
-                     
-                    </div>
- 
-                 </div>
-                 <a href="" class="apply">apply now</a>
-               </div>
-            </div>
-        </div>
-        <div class="div1" id="active2">
-            <img src="images/logos/slack.png" alt="">
-            <div class="text">
-                <p> Dev Ops</p>
-               <div class="text-flex">
-                <div class="text2">
-                    <div class="span">
-                        <span><i class="fa-solid fa-location-dot"></i>  Bangkok, Thailand</span>
-                    <span><i class="fa-regular fa-clock"></i>40 minutes ago</span>
-                    <span><i class="fa-regular fa-money-bill-1"></i> $75k - 80k</span>
-                    </div>
-                    <div class="text2-links">
-                     <a href="" class="inter">senior</a>
-                     <a href="" class="free">part time</a>
-                     
-                    </div>
- 
-                 </div>
-                 <a href="" class="apply">apply now</a>
-               </div>
-            </div>
-        </div>
-        <div class="div1">
-            <img src="images/logos/creative-market.png" alt="">
-            <div class="text">
-                <p>UX Designer</p>
-               <div class="text-flex">
-                <div class="text2">
-                    <div class="span">
-                        <span><i class="fa-solid fa-location-dot"></i> Bangkok, Thailand</span>
-                    <span><i class="fa-regular fa-clock"></i>2 hours ago</span>
-                    <span><i class="fa-regular fa-money-bill-1"></i> $100k</span>
-                    </div>
-                    <div class="text2-links">
-                     <a href="" class="inter">entry</a>
-                     <a href="" class="free">remot</a>
-                     
-                    </div>
- 
-                 </div>
-                 <a href="" class="apply">apply now</a>
-               </div>
-            </div>
-        </div>
-       <div class="arrow">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-              <li class="page-item ">
-                <a class="page-link diff" href="#" tabindex="-1" aria-disabled="true">Pre</a>
-              </li>
-              <li class="page-item activepag"><a class="page-link active4" href="#">1</a></li>
-              <li class="page-item " ><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item">
-                <a class="page-link diff" href="#">Next</a>
-              </li>
-            </ul>
-          </nav>
-       </div>
     </div>
-   </div>
-  <div class="two-img">
-    <div class="container" >
-        <div class="div1">
-            <p class=" p1">Gotto helps you an easier way to get new job</p>
-            <p class=" p2">You are not allowed to redistribute the template ZIP file on any other template collection website. Please contact us for more info. Thank you.</p>
-            <div class="flex">
-                <div class="span1">
-                    <span>12M</span>
-                    <span>Daily active users</span>
-                </div>
+    <div class="feature">
+        <div class="container">
+            <div class="title">
+                <h1>Featured Jobs</h1>
+            <p><span class="a">Over 10k opening jobs</span> Feel free to download and use our free </p>
+            <p>HTML templates from Tooplate website.</p>
+            </div>
+            <div class="div1">
+                <img src="images/logos/google.png" alt="">
+                <div class="text">
+                    <p>Technical Lead</p>
+                <div class="text-flex">
+                    <div class="text2">
+                        <div class="span">
+                            <span><i class="fa-solid fa-location-dot"></i> Kuala, Malaysia</span>
+                        <span><i class="fa-regular fa-clock"></i>10 hours ago</span>
+                        <span><i class="fa-regular fa-money-bill-1"></i> $20k</span>
+                        </div>
+                        <div class="text2-links">
+                        <a href="" class="inter">intership</a>
+                        <a href="" class="free">freelance</a>
+                        
+                        </div>
     
-                <div class="span2">
-                    <span>450k</span>
-                    <span>Opening jobs</span>
+                    </div>
+                    <a href="" class="apply">apply now</a>
+                </div>
                 </div>
             </div>
+            <div class="div1" id="active2">
+                <img src="images/logos/apple.png" alt="">
+                <div class="text">
+                    <p>Business Director</p>
+                <div class="text-flex">
+                    <div class="text2">
+                    <div class="span">
+                        <span><i class="fa-solid fa-location-dot"></i> California, USA</span>
+                        <span><i class="fa-regular fa-clock"></i>1 day ago</span>
+                        <span><i class="fa-regular fa-money-bill-1"></i> $90k</span>
+                    </div>
+                        <div class="text2-links">
+                        <a href="" class="inter">senior</a>
+                        <a href="" class="free">full time</a>
+                        
+                        </div>
+    
+                    </div>
+                    <a href="" class="apply">apply now</a>
+                </div>
+                </div>
+            </div>
+            <div class="div1">
+                <img src="images/logos/meta.png" alt="">
+                <div class="text">
+                    <p>HR Manager</p>
+                <div class="text-flex">
+                    <div class="text2">
+                        <div class="span">
+                            <span><i class="fa-solid fa-location-dot"></i> Tower, Paris</span>
+                        <span><i class="fa-regular fa-clock"></i>22 hours ago</span>
+                        <span><i class="fa-regular fa-money-bill-1"></i> $50k</span>
+                        </div>
+                        <div class="text2-links">
+                        <a href="" class="inter">junior</a>
+                        <a href="" class="free">contract</a>
+                        
+                        </div>
+    
+                    </div>
+                    <a href="" class="apply">apply now</a>
+                </div>
+                </div>
+            </div>
+            <div class="div1" id="active2">
+                <img src="images/logos/slack.png" alt="">
+                <div class="text">
+                    <p> Dev Ops</p>
+                <div class="text-flex">
+                    <div class="text2">
+                        <div class="span">
+                            <span><i class="fa-solid fa-location-dot"></i>  Bangkok, Thailand</span>
+                        <span><i class="fa-regular fa-clock"></i>40 minutes ago</span>
+                        <span><i class="fa-regular fa-money-bill-1"></i> $75k - 80k</span>
+                        </div>
+                        <div class="text2-links">
+                        <a href="" class="inter">senior</a>
+                        <a href="" class="free">part time</a>
+                        
+                        </div>
+    
+                    </div>
+                    <a href="" class="apply">apply now</a>
+                </div>
+                </div>
+            </div>
+            <div class="div1">
+                <img src="images/logos/creative-market.png" alt="">
+                <div class="text">
+                    <p>UX Designer</p>
+                <div class="text-flex">
+                    <div class="text2">
+                        <div class="span">
+                            <span><i class="fa-solid fa-location-dot"></i> Bangkok, Thailand</span>
+                        <span><i class="fa-regular fa-clock"></i>2 hours ago</span>
+                        <span><i class="fa-regular fa-money-bill-1"></i> $100k</span>
+                        </div>
+                        <div class="text2-links">
+                        <a href="" class="inter">entry</a>
+                        <a href="" class="free">remot</a>
+                        
+                        </div>
+    
+                    </div>
+                    <a href="" class="apply">apply now</a>
+                </div>
+                </div>
+            </div>
+        <div class="arrow">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                    <a class="page-link diff" href="#" tabindex="-1" aria-disabled="true">Pre</a>
+                </li>
+                <li class="page-item activepag"><a class="page-link active4" href="#">1</a></li>
+                <li class="page-item " ><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link diff" href="#">Next</a>
+                </li>
+                </ul>
+            </nav>
         </div>
-        <div class="div2">
-           <div class="icon">
-            <i class="fa-brands fa-youtube"></i>
-           </div>
         </div>
     </div>
-  </div>
-  <div class="recect-jobs">
-    <div class="container">
-        <h1>Recent Jobs</h1>
-        <p><span>Over 10k opening jobs </span>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
-        <div class="jobs-flex">
+    <div class="two-img">
+        <div class="container" >
             <div class="div1">
-               <div class="img">
-                <img src="images/jobs/it-professional-works-startup-project.jpg" alt="">
-                <a href="" class="inter">intership</a>
-                <a href="" class="free">freelance</a>
-               </div>
-              <a href="" class="tech">Technical lead</a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/salesforce.png" alt="">
-                    <span>salesforce</span>
+                <p class=" p1">Gotto helps you an easier way to get new job</p>
+                <p class=" p2">You are not allowed to redistribute the template ZIP file on any other template collection website. Please contact us for more info. Thank you.</p>
+                <div class="flex">
+                    <div class="span1">
+                        <span>12M</span>
+                        <span>Daily active users</span>
+                    </div>
+        
+                    <div class="span2">
+                        <span>450k</span>
+                        <span>Opening jobs</span>
+                    </div>
                 </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Kuala, Malaysia</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>10 hours ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$50K</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
             </div>
-            <div class="div1">
-               <div class="img">
-                <img src="images/jobs/marketing-assistant.jpg" alt="">
-                <a href="" class="inter">senior</a>
-                <a href="" class="free">part time </a>
-               </div>
-              <a href="" class="tech">Marketing Assistant</a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/shopify.png" alt="">
-                    <span>Spotify</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span> California, USA</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>8 days ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$20K</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
+            <div class="div2">
+            <div class="icon">
+                <i class="fa-brands fa-youtube"></i>
             </div>
-            <div class="div1">
-               <div class="img">
-                <img src="images/jobs/coding-man.jpg" alt="">
-                <a href="" class="inter">junior</a>
-                <a href="" class="free">contract</a>
-               </div>
-              <a href="" class="tech">Programmer</a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/twitter.png" alt="">
-                    <span>Twiter</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>California, USA</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>23 hours ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$68K</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
-            </div>
-            <div class="div1">
-               <div class="img">
-                <img src="images/jobs/pretty-blogger-posing-cozy-apartment.jpg" alt="">
-                <a href="" class="inter">junior</a>
-                <a href="" class="free">contract</a>
-               </div>
-              <a href="" class="tech">HR Manager
-                </a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/yelp.png" alt="">
-                    <span>Yelp</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Kuala, Malaysia</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>10 hours ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$50K</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
-            </div>
-            <div class="div1">
-               <div class="img">
-                <img src="images/jobs/paper-analysis.jpg" alt="">
-                <a href="" class="inter">junior</a>
-                <a href="" class="free">contract</a>
-               </div>
-              <a href="" class="tech">Sales Representative</a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/paypal.png" alt="">
-                    <span> Paypal</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Bangkok, Thailand</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>30 mins ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$20k - 35k</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
-            </div>
-            <div class="div1">
-               <div class="img">
-                <img src="images/jobs/logo-designer-working-computer-desktop.jpg" alt="">
-                <a href="" class="inter">mid level</a>
-                <a href="" class="free">full time</a>
-               </div>
-              <a href="" class="tech">Graphic Designer</a>
-              <div class="flex1">
-                <div class="text">
-                    <img src="images/logos/envato.png" alt="">
-                    <span>Envato</span>
-                </div>
-                <div class="icons">
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-              </div>
-              <div class="flex2">
-                <div class="k">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Melbourne, Australia</span>
-                </div>
-                <div class="h">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>2 days ago</span>
-                </div>
-              </div>
-              <div class="flex3">
-                <div class="d">
-                    <i class="fa-solid fa-money-bill"></i>
-                    <span>$20K</span>
-                </div>
-                <div class="flex3-apply">
-                    <a href="">apply now</a>
-                </div>
-              </div>
             </div>
         </div>
-
-        <a href="" class="browse">browse job listings</a>
     </div>
-  </div>
-  <div class="slider">
-    <p class="p-title">Happy customers</p>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-           <div class="flex-imgg">
-            <div class="div1">
-                <div class="flex-div1">
-               <div class="img">
-                <img src="images/avatar/portrait-charming-middle-aged-attractive-woman-with-blonde-hair.jpg" alt="">
-                <div class="text">
-                    <span >
-                    susan l
-                </span>
-                <p>product Manager</p>
+    <div class="recect-jobs">
+        <div class="container">
+            <h1>Recent Jobs</h1>
+            <p><span>Over 10k opening jobs </span>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
+            <div class="jobs-flex">
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/it-professional-works-startup-project.jpg" alt="">
+                    <a href="" class="inter">intership</a>
+                    <a href="" class="free">freelance</a>
                 </div>
-               </div>
-               <div class="icons-star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-               </div>
-              </div>
-             <div class="img-p">
-                <img class="left-img" src="images/left-quote.png" alt="">
-                <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-             </div>
-            </div>
-            <div class="div1">
-                <div class="flex-div1">
-               <div class="img">
-                <img src="images/avatar/medium-shot-smiley-senior-man.jpg" alt="">
-                <div class="text">
-                    <span >
-                    jack
-                </span>
-                <p>Technical Lead</p>
+                <a href="" class="tech">Technical lead</a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/salesforce.png" alt="">
+                        <span>salesforce</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
                 </div>
-               </div>
-               <div class="icons-star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-               </div>
-              </div>
-              <div class="img-p">
-              <img class="left-img" src="images/left-quote.png" alt="">
-              <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-           </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Kuala, Malaysia</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>10 hours ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$50K</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/marketing-assistant.jpg" alt="">
+                    <a href="" class="inter">senior</a>
+                    <a href="" class="free">part time </a>
+                </div>
+                <a href="" class="tech">Marketing Assistant</a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/shopify.png" alt="">
+                        <span>Spotify</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span> California, USA</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>8 days ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$20K</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/coding-man.jpg" alt="">
+                    <a href="" class="inter">junior</a>
+                    <a href="" class="free">contract</a>
+                </div>
+                <a href="" class="tech">Programmer</a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/twitter.png" alt="">
+                        <span>Twiter</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>California, USA</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>23 hours ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$68K</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/pretty-blogger-posing-cozy-apartment.jpg" alt="">
+                    <a href="" class="inter">junior</a>
+                    <a href="" class="free">contract</a>
+                </div>
+                <a href="" class="tech">HR Manager
+                    </a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/yelp.png" alt="">
+                        <span>Yelp</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Kuala, Malaysia</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>10 hours ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$50K</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/paper-analysis.jpg" alt="">
+                    <a href="" class="inter">junior</a>
+                    <a href="" class="free">contract</a>
+                </div>
+                <a href="" class="tech">Sales Representative</a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/paypal.png" alt="">
+                        <span> Paypal</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Bangkok, Thailand</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>30 mins ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$20k - 35k</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
+                <div class="div1">
+                <div class="img">
+                    <img src="images/jobs/logo-designer-working-computer-desktop.jpg" alt="">
+                    <a href="" class="inter">mid level</a>
+                    <a href="" class="free">full time</a>
+                </div>
+                <a href="" class="tech">Graphic Designer</a>
+                <div class="flex1">
+                    <div class="text">
+                        <img src="images/logos/envato.png" alt="">
+                        <span>Envato</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="k">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Melbourne, Australia</span>
+                    </div>
+                    <div class="h">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <div class="flex3">
+                    <div class="d">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <span>$20K</span>
+                    </div>
+                    <div class="flex3-apply">
+                        <a href="">apply now</a>
+                    </div>
+                </div>
+                </div>
             </div>
-           </div>
 
-          </div>
-          <div class="carousel-item">
+            <a href="" class="browse">browse job listings</a>
+        </div>
+    </div>
+    <div class="slider">
+        <p class="p-title">Happy customers</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
             <div class="flex-imgg">
                 <div class="div1">
                     <div class="flex-div1">
-                   <div class="img">
-                    <img src="images/avatar/portrait-beautiful-young-woman.jpg" alt="">
-                    <div class="text">
-                        <span >
-                        haley
-                    </span>
-                    <p>sales markting</p>
-                    </div>
-                   </div>
-                   <div class="icons-star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                   </div>
-                  </div>
-                 <div class="img-p">
-                    <img class="left-img" src="images/left-quote.png" alt="">
-                    <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                 </div>
-                </div>
-                <div class="div1">
-                    <div class="flex-div1">
-                   <div class="img">
-                    <img src="images/avatar/blond-man-happy-expression.jpg" alt="">
-                    <div class="text">
-                        <span >
-                        jackson
-                    </span>
-                    <p>dev ops</p>
-                    </div>
-                   </div>
-                   <div class="icons-star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                   </div>
-                  </div>
-                  <div class="img-p">
-                  <img class="left-img" src="images/left-quote.png" alt="">
-                  <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-               </div>
-                </div>
-               </div>
-          </div>
-          <div class="carousel-item">
-            <div class="flex-imgg">
-                <div class="div1">
-                    <div class="flex-div1">
-                   <div class="img">
-                    <img src="images/avatar/university-study-abroad-lifestyle-concept.jpg" alt="">
-                    <div class="text">
-                        <span >
-                        kevin
-                    </span>
-                    <p>intership</p>
-                    </div>
-                   </div>
-                   <div class="icons-star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                   </div>
-                  </div>
-                  <div class="img-p">
-                  <img class="left-img" src="images/left-quote.png" alt="">
-                  <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-               </div>
-                </div>
-                <div class="div1">
-                    <div class="flex-div1">
-                   <div class="img">
+                <div class="img">
                     <img src="images/avatar/portrait-charming-middle-aged-attractive-woman-with-blonde-hair.jpg" alt="">
                     <div class="text">
                         <span >
@@ -663,135 +539,264 @@
                     </span>
                     <p>product Manager</p>
                     </div>
-                   </div>
-                   <div class="icons-star">
+                </div>
+                <div class="icons-star">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                   </div>
-                  </div>
-                 <div class="img-p">
+                </div>
+                </div>
+                <div class="img-p">
                     <img class="left-img" src="images/left-quote.png" alt="">
                     <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                 </div>
                 </div>
-               
-               </div>
-          </div>
-        </div>
-        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
-      </div>
-  </div>
-  <div class="orange-sec">
-    <div class="spec-container">
-        <div class="text">
-            <h1>Over 10k opening jobs</h1>
-            <p>If you are looking for free HTML templates, you may visit Tooplate website. If you need a collection of free templates, you can visit Too CSS website.</p>
-        </div>
-        <div class="links">
-            <a href="">create an account</a>
-            <a href="">post a job</a>
-        </div>
-    </div>
-  </div>
-  <div class="up-foot">
-    <div class="container">
-        <div class="div1">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-                <div class="text">
-                    <h2>gotto</h2>
-                    <p>online job portal</p>
+                </div>
+                <div class="div1">
+                    <div class="flex-div1">
+                <div class="img">
+                    <img src="images/avatar/medium-shot-smiley-senior-man.jpg" alt="">
+                    <div class="text">
+                        <span >
+                        jack
+                    </span>
+                    <p>Technical Lead</p>
+                    </div>
+                </div>
+                <div class="icons-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                </div>
+                <div class="img-p">
+                <img class="left-img" src="images/left-quote.png" alt="">
+                <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
                 </div>
             </div>
-            <span>
-           
-                <i class="fa-solid fa-globe"></i>
-                <a href="">WWW.jobbportal.com</a>
-             </span>
-             <span>
-            
-                <i class="fa-solid fa-phone"></i>
-                <a href=""> 305-240-9671 </a>
-            </span>
-            <span>
-            
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:info@jobportal.com"> info@jobportal.com</a>
-                </span>
-            
-        </div>
-        <div class="div2">
-            <h4>company</h4>
-            <a href="about.html">about</a>
-            <a href="">blog</a>
-            <a href="">jobs</a>
-            <a href="contact.html">contact</a>
-        </div>
-        <div class="div3">
-            <h4>recources</h4>
-            <a href="">guide</a>
-            <a href="">how it works</a>
-            <a href="">salary tool</a>
-        </div>
-        <div class="div4">
-            <h4>newsletter</h4>
-            <form action="">
-                <p>Get notified jobs news</p>
-                <div class="input-up">
-                   
-                    <i class="fa-regular fa-user"></i>
-                    <input type="email" name="mail" placeholder="yourname@gmail.com" required>
-                  <span>  
-                    <input type="submit" value="">
-                    <i class="fa-brands fa-telegram"></i>
-                </span>
+
+            </div>
+            <div class="carousel-item">
+                <div class="flex-imgg">
+                    <div class="div1">
+                        <div class="flex-div1">
+                    <div class="img">
+                        <img src="images/avatar/portrait-beautiful-young-woman.jpg" alt="">
+                        <div class="text">
+                            <span >
+                            haley
+                        </span>
+                        <p>sales markting</p>
+                        </div>
+                    </div>
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    </div>
+                    <div class="img-p">
+                        <img class="left-img" src="images/left-quote.png" alt="">
+                        <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    </div>
+                    <div class="div1">
+                        <div class="flex-div1">
+                    <div class="img">
+                        <img src="images/avatar/blond-man-happy-expression.jpg" alt="">
+                        <div class="text">
+                            <span >
+                            jackson
+                        </span>
+                        <p>dev ops</p>
+                        </div>
+                    </div>
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    </div>
+                    <div class="img-p">
+                    <img class="left-img" src="images/left-quote.png" alt="">
+                    <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
-            </form>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="flex-imgg">
+                    <div class="div1">
+                        <div class="flex-div1">
+                    <div class="img">
+                        <img src="images/avatar/university-study-abroad-lifestyle-concept.jpg" alt="">
+                        <div class="text">
+                            <span >
+                            kevin
+                        </span>
+                        <p>intership</p>
+                        </div>
+                    </div>
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    </div>
+                    <div class="img-p">
+                    <img class="left-img" src="images/left-quote.png" alt="">
+                    <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                    </div>
+                    <div class="div1">
+                        <div class="flex-div1">
+                    <div class="img">
+                        <img src="images/avatar/portrait-charming-middle-aged-attractive-woman-with-blonde-hair.jpg" alt="">
+                        <div class="text">
+                            <span >
+                            susan l
+                        </span>
+                        <p>product Manager</p>
+                        </div>
+                    </div>
+                    <div class="icons-star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    </div>
+                    <div class="img-p">
+                        <img class="left-img" src="images/left-quote.png" alt="">
+                        <p class="main-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button> -->
         </div>
     </div>
-  </div>
-  <footer>
-    <div class="foot-container">
-       <div class="big-flex">
-        <div class="main-div1">
+    <div class="orange-sec">
+        <div class="spec-container">
             <div class="text">
-                <p>Copyright &copy; Gotto Job 2024</p>
-               <div class="links">
-                <a href="">privacy police</a>
-                <a href="">terms</a>
-               </div>
+                <h1>Over 10k opening jobs</h1>
+                <p>If you are looking for free HTML templates, you may visit Tooplate website. If you need a collection of free templates, you can visit Too CSS website.</p>
             </div>
-            <div class="icons">
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-               <a href=""> <i class="fa-brands fa-linkedin"></i></a>
-               <a href=""> <i class="fa-brands fa-instagram"></i></a>
-               <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            <div class="links">
+                <a href="">create an account</a>
+                <a href="">post a job</a>
             </div>
-           
-        </div>
-        <div class="designby">
-            <span>design: 
-                <a href="https://www.tooplate.com/">tooplate</a>
-            </span>
-        </div>
-       </div>
-        <div class="main-div2">
-            <a href="#myhead">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
         </div>
     </div>
-  </footer>
- 
+    <div class="up-foot">
+        <div class="container">
+            <div class="div1">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                    <div class="text">
+                        <h2>gotto</h2>
+                        <p>online job portal</p>
+                    </div>
+                </div>
+                <span>
+            
+                    <i class="fa-solid fa-globe"></i>
+                    <a href="">WWW.jobbportal.com</a>
+                </span>
+                <span>
+                
+                    <i class="fa-solid fa-phone"></i>
+                    <a href=""> 305-240-9671 </a>
+                </span>
+                <span>
+                
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@jobportal.com"> info@jobportal.com</a>
+                    </span>
+                
+            </div>
+            <div class="div2">
+                <h4>company</h4>
+                <a href="about.html">about</a>
+                <a href="">blog</a>
+                <a href="">jobs</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="div3">
+                <h4>recources</h4>
+                <a href="">guide</a>
+                <a href="">how it works</a>
+                <a href="">salary tool</a>
+            </div>
+            <div class="div4">
+                <h4>newsletter</h4>
+                <form action="">
+                    <p>Get notified jobs news</p>
+                    <div class="input-up">
+                    
+                        <i class="fa-regular fa-user"></i>
+                        <input type="email" name="mail" placeholder="yourname@gmail.com" required>
+                    <span>  
+                        <input type="submit" value="">
+                        <i class="fa-brands fa-telegram"></i>
+                    </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot-container">
+        <div class="big-flex">
+            <div class="main-div1">
+                <div class="text">
+                    <p>Copyright &copy; Gotto Job 2024</p>
+                <div class="links">
+                    <a href="">privacy police</a>
+                    <a href="">terms</a>
+                </div>
+                </div>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+            
+            </div>
+            <div class="designby">
+                <span>design: 
+                    <a href="https://www.tooplate.com/">tooplate</a>
+                </span>
+            </div>
+        </div>
+            <div class="main-div2">
+                <a href="#myhead">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="test.js"></script>
 </body>
