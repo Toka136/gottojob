@@ -60,6 +60,7 @@ header  .flex
    /* justify-content: space-between; */
    position: relative;
    width: 100%;
+   margin-top: 54px;
  
 
 }
@@ -116,6 +117,7 @@ header  .sign a:not(.login)
 .big-container
 {
     display: flex;
+    margin-bottom: 30px;
     
 }
 header .container-spec .links .active
@@ -364,7 +366,7 @@ header  .flex:hover
     background: url(../images/close-up-young-business-team-working.jpg) no-repeat ;
     background-size: cover;
     width: 100%;
-    min-height: 500px;
+    min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -502,7 +504,7 @@ font-size: 17px;
     color: var(--color3);
     margin-left: 5px;
 }
-@media (max-width:1000px)
+@media (max-width:900px)
 {
     .main-img .container-spec
     {
@@ -1821,11 +1823,16 @@ font-size: 17px;
     {
         font-size: 18px;
     }
-    
-    .slider
-     {
-        height: 900px;
+    .flex-imgg 
+    {
+        flex-direction: column;
     }
+    .flex-imgg > div 
+    {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
 }
 @media(max-width:426px)
 {
@@ -1869,19 +1876,6 @@ font-size: 17px;
     {
         width: 70px;
         height: 70px;
-    }
-    .flex-imgg
-    {
-        flex-direction: column;
-    }
-    .flex-imgg > div
-    {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .flex-imgg .flex-div1 > div
-    {
-       text-align: center;
     }
 }
 @media(max-width:376px)
@@ -2202,7 +2196,7 @@ font-size: 17px;
         
     }
 }
-@media(max-width:900px)
+@media(max-width:769px)
 {
     .up-foot .container
     {
@@ -2223,7 +2217,7 @@ font-size: 17px;
         margin-left: 80px;
     }
 }
-@media (max-width:767px)
+@media (max-width:426px)
 {
     .up-foot .container
     {
@@ -2259,7 +2253,7 @@ font-size: 17px;
         margin-left: 0px;
     }
 }
-@media (max-width:424px)
+@media (max-width:376px)
 {
     .up-foot .container .div2,
     .up-foot .container .div3
@@ -2269,11 +2263,11 @@ font-size: 17px;
     .up-foot .container .div4 .input-up span 
      {   
        
-        margin-left: 34px;
+        margin-left: 50px;
      }
     .up-foot .container .div4 .input-up
      {
-        width: 80%;
+        width: 93%;
         padding: 5px;
     }
     .up-foot .container .div4 form 
@@ -2438,7 +2432,6 @@ footer .foot-container .main-div2 i
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        padding: 0px 10px;
     }
     footer .foot-container .main-div1
     {
@@ -3710,9 +3703,8 @@ footer .foot-container .main-div2 i
     }
 }
 @media (max-width: 350px) {
-    .up-foot .container .div4 .input-up span 
-    {
-        margin-left: 0px;
+    .up-foot .container .div4 .input-up span {
+        margin-left: 6px;
     }
 }
 /* ==================== */
