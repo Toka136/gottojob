@@ -5,48 +5,64 @@
     <title>gotto job</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css-2/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="myhead">
-        <div class="big-container" id="big">
+    <header>
         <div class="container-spec">
-            <div class="logo-links">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                    <div class="text">
-                        <h2>gotto</h2>
-                        <p>online job portal</p>
-                    </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <div class="text">
+                    <h2>gotta</h2>
+                    <p>online job portal</p>
                 </div>
-                </div>
+            </div>
+            <div class="navbar-spec">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
                 
-                    <button class="lines" id="button-line"  onclick="myFunction()" >
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active spec-active" aria-current="page" href="index.html">Home page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about gotto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        pages
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="job.html">job listings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="details.html">job details</a></li>
+                        
                     
-              
-                <div class="flex" id="flex-header">
-                    <div class="links">
-                        <a href="index.html" class="active">home page</a>
-                        <a href="about.html" >about gotto</a>
-                        <div class="a">
-                            <span>page <i class="fa-solid fa-chevron-down"></i></span>
-                            <div class="page-a">
-                                <a href="job.html">job listing</a>
-                            <a href="details.html">job details</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="">contact</a>
-                    </div>
-                <div class="sign">
-                    <a href="">register</a>
-                    <a href="" class="login">login</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  login" aria-current="page" href="#">login</a>
+                    </li>
+                    </ul>
+                   
                 </div>
                 </div>
+            </nav>
             </div>
         </div>
     </header>

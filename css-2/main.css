@@ -40,319 +40,131 @@ hbody
     --p-color:#717275;
 }
 
-header .container-spec,
 header .container-spec
 {
-    display: grid;
-    justify-content: space-between;
-    padding: 5px 50px;
-    width: 30%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 10px 0;
+    width: 97%;
+    margin-left: 2%;
 }
-header .container-spec img,
-header .container-spec img
+header .container-spec .logo img 
 {
     width: 50px;
 }
-header  .flex
-{
-    display: grid;
-    grid-template-columns: 70% 25%;
-   /* justify-content: space-between; */
-   position: relative;
-   width: 100%;
-   margin-top: 54px;
- 
 
-}
- .up-foot .logo,
- header .container-spec .logo
+header .container-spec .logo
 {
     display: flex;
     align-items: center;
+    width: 30%;
     
 }
- .up-foot .logo .text,
- header .container-spec .text
+.log-reg
 {
-    margin-left: 20px;
-}
-.up-foot .logo .text h2,
- header .container-spec .text h2
-{
-    font-size: 20px;
-    font-family: var(--main-font);
-    color: var(--color3);
-    text-transform: capitalize;
-    margin-bottom: 0;
-}
-.up-foot .logo .text  p,
- header .container-spec .text p
-{
-    color: var(--main-color);
-    text-transform: uppercase;
-    font-family: var(--main-font);
-    font-size: 14px;
-
-}
-header  .links
-{
-    margin-left: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 28%;
 }
-header  .links a,
-header  .links .a,
-header  .sign a:not(.login)
+header .container-spec .text
 {
-    font-family: var(--main-font);
-    font-size: 22px;
-    text-transform: capitalize;
-    color: rgba(0, 0, 0, 0.575);
-    text-decoration: none;
-    transition: var(--trans-tim);
-    width: 100%;
-    text-align: center;
+   margin-left: 20px;
 }
-.big-container
+
+header .container-spec .text h2
 {
-    display: flex;
-    margin-bottom: 30px;
-    
+   font-size: 20px;
+   font-family: var(--main-font);
+   color: var(--color3);
+   text-transform: capitalize;
+   margin-bottom: 0;
 }
-header .container-spec .links .active
+
+header .container-spec .text p
 {
-    color: var(--main-color);
+   color: var(--main-color);
+   text-transform: uppercase;
+   font-family: var(--main-font);
+   font-size: 14px;
+
 }
-header  .links .a
-{
-  position: relative;
-  
-}
-header .links .page-a
-{
-    visibility: hidden;
-}
-header  .links .page-a
-{
-    position: absolute;
-    padding: 10px 0px;
-    width: 126px;
-    bottom: -93px;
-    left: 106px;
-    transition: bottom .5s;
-    background: white;
-    box-shadow: var(--box-shadow);
-    padding: 10px;
-    border-radius: 20px;
-}
-header  .links .page-a a:nth-child(1)
-{
-    border-bottom: 1px solid;
-}
-header  .links .page-a a
-{
-    padding-bottom: 10px;
-    /* width: 126px; */
-    display: block;
-}
-header  .links a:hover,
-header  .sign a:not(.login):hover
-{
-  color: var(--main-color);
-}
-header  .links .a:hover .page-a
-{
-    visibility: visible;
-} 
-header  .links .page-a:hover
-{
-  bottom: -88px;
-}
-header  .sign 
+/* header .container-spec .sign 
 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-header  .sign .login 
+} */
+header .container-spec  .login 
 {
     background: var(--main-color);
-    padding: 10px 20px;
+    padding-left:  20px;
+    padding-right:  20px;
     border-radius: 10px;
     color: white;
     text-decoration: none;
     text-transform: capitalize;
     font-family: var(--main-font);
     transition: var(--trans-tim);
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
 }
-
-header  .sign .login:hover
+.nav-item
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header .container-spec  .login:hover
 {
  background-color: var(--color2);
 }
-header   .lines
+header .container-spec  a:not(.login):hover
 {
-    width: 30px;
-    height: 0px;
-    background-color: white;
-    position: absolute;
-    right: 49px;
-    top: 30px;
-  visibility: hidden;
-  border: none;
-  outline: none;
+  color: var(--main-color);
 }
-header  .lines span
-{
-    position: relative;
+header .container-spec .sign a:not(.login) {
+    font-family: var(--main-font);
+    font-size: 17px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.575);
+    text-decoration: none;
+    transition: var(--trans-tim);
 }
-header  .lines span::before
+.navbar-spec
 {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 2px;
-    left: 0;
-    top: 10px;
-    background-color: black;
-}
-
-header .container-spec .lines span::after
-{
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 2px;
-    left: 0;
-    top: 20px;
-    background-color: black;
-}
-header  .flex:hover .links
-{
-    visibility: visible;
-    z-index: 4;
-}
-header  .flex:hover .sign
-{
-    visibility: visible;
-}
-
-
-@media (max-width:900px)
-{
-    header .container-spec
-    {
-        display: grid;
-        grid-template-columns: 35% 60%;
-        padding: 5px;
-    }
-    header .flex
-    {
-        grid-template-columns: 50%;
-       margin-right:10px ;
-       align-items: center;
-       margin-bottom: 100px;
-       display: none;
-       
-    }
-    header  .flex:hover
-    {
-
-    background-color: white;
-       z-index: 4;
-       padding-left: 50%;
-    }
-
-    header  .links
-    {
-        flex-direction: column;
-        /* visibility: hidden; */
-        margin-top: 100px;
-        /* margin-right: 70px; */
-       
-    }
-     .sign
-    {
-        flex-direction: column;
-        /* visibility: hidden; */
-        justify-content: space-between;
-        /* margin-right: 70px; */
-       
-    }
-    header .container-spec .lines
-    {
-        visibility:visible;
-    }
-    header .links a,
-    .sign a,
-    header .links .a 
-    {
-        margin-bottom: 70px;
-        /* visibility: visible; */
-    }
-    header .links .a:hover .page-a
-   {
     
-    height: 180px;
-    top: 46px;
-    left: 306px;
-    }
-    header .links .a:hover
-   {
-    margin-bottom: 80px;
-
-   }
-   header  .links .a a 
-   {
-    padding: 5px;
-    margin: 0;
-    visibility: hidden;
-   }
-   header  .links .a:hover a
-   {
-    visibility: visible;
-   } 
-
+    width: 65%;
+   
 }
-@media (max-width:776px)
+.spec-active
 {
-    header .flex 
-    {
-        grid-template-columns: 100%;
-        margin-right: 10px;
-        align-items: center;
-        visibility: visible;
-        z-index: 5;
-        background: white;
-       
-    }
+    color: var(--main-color);
+   
+    /* border-bottom: 1vh solid orangered; */
+}
+@media(max-width:769px)
+{
+    
     header .container-spec
     {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        padding: 5px;
+       
+        align-items: unset;
+        text-align: center;
+        justify-content: space-between;
     }
-    header  .logo .text h2
-{
-    font-size: 14px;
-   
-}
-header  .logo .text  p
-{
-   
-    font-size: 11px;
+    .navbar-spec {
+        width: 50%;
+        /* text-align: end; */
 
-}
-header  .flex:hover 
-{
-    padding: 0;
-}
-/* .container-spec .logo
-{
-    flex-direction: column;
-    align-items: center;
-} */
+    }
+    header .container-spec .login
+    {
+        margin: 0;
+    }
+   
 }
 /* ============= */
 /* ========== main img========== */

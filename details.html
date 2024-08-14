@@ -5,48 +5,64 @@
     <title>Details</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css-2/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header id="myhead">
-        <div class="big-container" id="big">
+    <header>
         <div class="container-spec">
-            <div class="logo-links">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                    <div class="text">
-                        <h2>gotto</h2>
-                        <p>online job portal</p>
-                    </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <div class="text">
+                    <h2>gotta</h2>
+                    <p>online job portal</p>
                 </div>
-                </div>
+            </div>
+            <div class="navbar-spec">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
                 
-                    <button class="lines" id="button-line"  onclick="myFunction()" >
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="about.html">about gotto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active spec-active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        pages
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="job.html">job listings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="details.html">job details</a></li>
+                        
                     
-              
-                <div class="flex" id="flex-header">
-                    <div class="links">
-                        <a href="index.html" >home page</a>
-                        <a href="about.html">about gotto</a>
-                        <div class="a">
-                            <span class="active">page <i class="fa-solid fa-chevron-down"></i></span>
-                            <div class="page-a">
-                                <a href="job.html">job listing</a>
-                            <a href="details.html">job details</a>
-                            </div>
-                        </div>
-                        <a href="contact.html"  >contact</a>
-                    </div>
-                <div class="sign">
-                    <a href="">register</a>
-                    <a href="" class="login">login</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  login" aria-current="page" href="#">login</a>
+                    </li>
+                    </ul>
+                   
                 </div>
                 </div>
+            </nav>
             </div>
         </div>
     </header>
@@ -144,127 +160,127 @@
     </div>
     <div class="recect-jobs">
         <div class="container">
-           <div class="min-flex-job">
-            <div class="te">
-                <h1>Similar Jobs</h1>
-            <p><span>Over 10k opening jobs </span>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
+            <div class="min-flex-job">
+                <div class="te">
+                    <h1>Similar Jobs</h1>
+                <p><span>Over 10k opening jobs </span>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit eismuod larehai</p>
+                </div>
+                <a href="" class="browse-2">browse job listings</a>
             </div>
-            <a href="" class="browse-2">browse job listings</a>
-           </div>
-            <div class="jobs-flex">
-                <div class="div1">
-                   <div class="img">
-                    <img src="images/jobs/it-professional-works-startup-project.jpg" alt="">
-                    <a href="" class="inter">intership</a>
-                    <a href="" class="free">freelance</a>
-                   </div>
-                  <a href="" class="tech">Technical lead</a>
-                  <div class="flex1">
-                    <div class="text">
-                        <img src="images/logos/salesforce.png" alt="">
-                        <span>salesforce</span>
+                <div class="jobs-flex">
+                    <div class="div1">
+                    <div class="img">
+                        <img src="images/jobs/it-professional-works-startup-project.jpg" alt="">
+                        <a href="" class="inter">intership</a>
+                        <a href="" class="free">freelance</a>
                     </div>
-                    <div class="icons">
-                        <i class="fa-regular fa-bookmark"></i>
-                        <i class="fa-regular fa-heart"></i>
+                    <a href="" class="tech">Technical lead</a>
+                    <div class="flex1">
+                        <div class="text">
+                            <img src="images/logos/salesforce.png" alt="">
+                            <span>salesforce</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
                     </div>
-                  </div>
-                  <div class="flex2">
-                    <div class="k">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>Kuala, Malaysia</span>
+                    <div class="flex2">
+                        <div class="k">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Kuala, Malaysia</span>
+                        </div>
+                        <div class="h">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>10 hours ago</span>
+                        </div>
                     </div>
-                    <div class="h">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>10 hours ago</span>
+                    <div class="flex3">
+                        <div class="d">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>$50K</span>
+                        </div>
+                        <div class="flex3-apply">
+                            <a href="">apply now</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="flex3">
-                    <div class="d">
-                        <i class="fa-solid fa-money-bill"></i>
-                        <span>$50K</span>
                     </div>
-                    <div class="flex3-apply">
-                        <a href="">apply now</a>
+                    <div class="div1">
+                    <div class="img">
+                        <img src="images/jobs/marketing-assistant.jpg" alt="">
+                        <a href="" class="inter">senior</a>
+                        <a href="" class="free">part time </a>
                     </div>
-                  </div>
+                    <a href="" class="tech">Marketing Assistant</a>
+                    <div class="flex1">
+                        <div class="text">
+                            <img src="images/logos/shopify.png" alt="">
+                            <span>Spotify</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="flex2">
+                        <div class="k">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span> California, USA</span>
+                        </div>
+                        <div class="h">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>8 days ago</span>
+                        </div>
+                    </div>
+                    <div class="flex3">
+                        <div class="d">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>$20K</span>
+                        </div>
+                        <div class="flex3-apply">
+                            <a href="">apply now</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="div1">
+                    <div class="img">
+                        <img src="images/jobs/coding-man.jpg" alt="">
+                        <a href="" class="inter">junior</a>
+                        <a href="" class="free">contract</a>
+                    </div>
+                    <a href="" class="tech">Programmer</a>
+                    <div class="flex1">
+                        <div class="text">
+                            <img src="images/logos/twitter.png" alt="">
+                            <span>Twiter</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="flex2">
+                        <div class="k">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>California, USA</span>
+                        </div>
+                        <div class="h">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>23 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="flex3">
+                        <div class="d">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>$68K</span>
+                        </div>
+                        <div class="flex3-apply">
+                            <a href="">apply now</a>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
-                <div class="div1">
-                   <div class="img">
-                    <img src="images/jobs/marketing-assistant.jpg" alt="">
-                    <a href="" class="inter">senior</a>
-                    <a href="" class="free">part time </a>
-                   </div>
-                  <a href="" class="tech">Marketing Assistant</a>
-                  <div class="flex1">
-                    <div class="text">
-                        <img src="images/logos/shopify.png" alt="">
-                        <span>Spotify</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fa-regular fa-bookmark"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                  </div>
-                  <div class="flex2">
-                    <div class="k">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span> California, USA</span>
-                    </div>
-                    <div class="h">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>8 days ago</span>
-                    </div>
-                  </div>
-                  <div class="flex3">
-                    <div class="d">
-                        <i class="fa-solid fa-money-bill"></i>
-                        <span>$20K</span>
-                    </div>
-                    <div class="flex3-apply">
-                        <a href="">apply now</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="div1">
-                   <div class="img">
-                    <img src="images/jobs/coding-man.jpg" alt="">
-                    <a href="" class="inter">junior</a>
-                    <a href="" class="free">contract</a>
-                   </div>
-                  <a href="" class="tech">Programmer</a>
-                  <div class="flex1">
-                    <div class="text">
-                        <img src="images/logos/twitter.png" alt="">
-                        <span>Twiter</span>
-                    </div>
-                    <div class="icons">
-                        <i class="fa-regular fa-bookmark"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                  </div>
-                  <div class="flex2">
-                    <div class="k">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>California, USA</span>
-                    </div>
-                    <div class="h">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>23 hours ago</span>
-                    </div>
-                  </div>
-                  <div class="flex3">
-                    <div class="d">
-                        <i class="fa-solid fa-money-bill"></i>
-                        <span>$68K</span>
-                    </div>
-                    <div class="flex3-apply">
-                        <a href="">apply now</a>
-                    </div>
-                  </div>
-                </div>
-                
-            </div>
     
             
         </div>
