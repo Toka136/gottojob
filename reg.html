@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css-2/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container-spec">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <div class="text">
+                    <h2>gotta</h2>
+                    <p>online job portal</p>
+                </div>
+            </div>
+            <div class="navbar-spec">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about gotto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        pages
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="job.html">job listings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="details.html">job details</a></li>
+                        
+                    
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="reg.html">register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  login " aria-current="page" href="login.html">login</a>
+                    </li>
+                    </ul>
+                   
+                </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <div class="form-reg">
+            <form class="form-container">
+                <h2>registration</h2>
+                <div class="flex-reg">
+                    <div class="div1">
+                    <label for="f-name">full name</label>
+                <input type="text" name="name" id="f-name" placeholder="enter your name">
+                </div>
+                <div class="div1">
+                <label for="user">user name</label>
+                <input type="text" name="user" id="user" placeholder="enter your username">
+
+                </div>
+                <div class="div1">
+                <label for="mail">email</label>
+                <input type="email" name="mail" id="mail" placeholder="enter your email">
+                </div>
+                <div class="div1">
+                <label for="phone">phone number</label>
+                <input type="text" name="phone" id="phone" placeholder="enter your phone number">
+                </div>
+                <div class="div1">
+                <label for="pass">password</label>
+                <input type="password" name="pass" id="pass" placeholder="enter your password">
+                </div>
+                <div class="div1">
+                <label for="co-pass">confirm password</label>
+                <input type="password" name="co-pass" id="co-pass" placeholder="confirm your password">
+                </div>
+                </div>
+                <label for="" class="gender">gender</label>
+                <div class="flex-radio">
+                    <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="css">Female</label><br>
+            </div>
+            <div>
+                <input type="radio" id="notsay" name="gender" value="notsay">
+                <label for="notsay">prefare not to say</label>
+            </div>
+                </div>
+                <input type="submit" value="register">
+            </form>
+    </div>
+</body>

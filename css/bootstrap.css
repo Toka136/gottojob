@@ -3658,7 +3658,7 @@ textarea.form-control-lg {
 
 .dropdown-item {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   clear: both;
   font-weight: 400;
@@ -4057,6 +4057,7 @@ textarea.form-control-lg {
   width: 100%;
     border: none;
     outline: none;
+    text-align: end;
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
