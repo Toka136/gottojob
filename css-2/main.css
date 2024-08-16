@@ -4178,6 +4178,10 @@ footer .foot-container .main-div2 i
     font-weight: 700;
     text-align: center;
 }
+label
+{
+    background-color: white;
+}
 @media(max-width:767px)
 {
     .form-reg .form-container .flex-reg input {
@@ -4200,6 +4204,24 @@ footer .foot-container .main-div2 i
     .form-reg .form-container .flex-reg label, .gender
     {
         margin-bottom: 8px;
+        font-size: 14px;
+    }
+}
+@media(max-width:425px)
+{
+    .form-reg .form-container .flex-reg input
+    {
+        margin-bottom: 16px;
+        border: 1px solid;
+        font-size: 13px;
+        padding-left: 2px;
+    }
+    .flex-radio > div:not(div:nth-child(1)) 
+    {
+        margin-left: 0px;
+    }
+    label
+    {
         font-size: 14px;
     }
 }
