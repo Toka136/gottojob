@@ -3879,6 +3879,7 @@ footer .foot-container .main-div2 i
     /* margin-left: 15%; */
     background-color: white;
     display: flex;
+    box-shadow: var(--box-shadow);
 
 }
 .log-form .spec-container .div1
@@ -4098,7 +4099,7 @@ footer .foot-container .main-div2 i
     margin-left: 25%;
     background-color: white;
     padding-bottom: 30px;
-    
+    box-shadow: var(--box-shadow);
 }
 .form-reg .form-container h2
 {
