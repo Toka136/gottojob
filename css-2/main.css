@@ -175,6 +175,7 @@ header .container-spec .sign a:not(.login) {
 .main-img
 {
     position: relative;
+    z-index: -1;
 }
 .main-img .container-spec
 {
@@ -292,7 +293,7 @@ font-size: 17px;
 }
 .main-img .container-spec .right-text a
 {
-        margin-left: 14px;
+        /* margin-left: 14px; */
         text-decoration: none;
         color: white;
         border: 1px solid;
@@ -391,6 +392,8 @@ font-size: 17px;
     width: 80%;
     margin-left: 15%; 
     margin-top: 70px;
+    position: relative;
+    z-index: -1;
 
 }
 .browse-cat .container h1
@@ -1041,7 +1044,7 @@ font-size: 17px;
 {
     display: flex;
     justify-content: space-between;
-    height: 520px;
+    /* height: 520px; */
     margin-top: 50px;
 }
 .two-img .container > div
@@ -1117,6 +1120,7 @@ font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 .two-img .container .div2 .icon 
 {
@@ -1246,6 +1250,8 @@ font-size: 17px;
 .recect-jobs .container
 {
     margin-top: 70px;
+    position: relative;
+    z-index: -1;
 }
 .recect-jobs .container h1
 {
@@ -1608,6 +1614,8 @@ font-size: 17px;
     background-color: #f0f8ff;
     margin-top: 70px;
     padding: 3px 0 90px 0;
+    position: relative;
+    z-index: -1;
 }
 .slider .p-title
 {
@@ -1731,7 +1739,7 @@ font-size: 17px;
     background-size: cover;
     position: relative;
     min-height: 450px;
-    
+    z-index: -1;
 }
 .orange-sec::before
 {
@@ -2320,10 +2328,10 @@ footer .foot-container .main-div2 i
 .main-img-about .container-about
 {
     position: relative;
+    z-index: -1;
     
     /* background-size: cover; */
     height: 400px;
-  
 }
 .main-img-about .container-about::after
 {
@@ -2427,7 +2435,8 @@ footer .foot-container .main-div2 i
     width: 80%;
     margin-left: 10%;
     display: flex;
-    
+    z-index: -1;
+    position: relative;
     margin-top: 50px;
 }
 .about-intro .about-container > div
@@ -3033,6 +3042,8 @@ footer .foot-container .main-div2 i
 .arrow
 {
     margin-top: 70px;
+    position: relative;
+    z-index: -1;
 }
 /* ========================== */
 /* ============================= */
@@ -3731,6 +3742,8 @@ footer .foot-container .main-div2 i
     height:470px;
     margin-top: 110px;
     margin-bottom: 40px;
+    z-index: -1;
+    position: relative;
 }
 .map .map-container > div
 {
@@ -4225,4 +4238,20 @@ label
     {
         font-size: 14px;
     }
+}
+.hide
+{
+    display: none;
+}
+.trans
+{
+    transition: display 1s;
+}
+.hov
+{
+    color: white;
+}
+.hov:hover
+{
+    color: var(--main-color);
 }
