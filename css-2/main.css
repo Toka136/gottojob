@@ -1,4 +1,4 @@
-hbody
+body
 {
     font-family: var(--main-font);
     font-size: 18px;
@@ -175,7 +175,7 @@ header .container-spec .sign a:not(.login) {
 .main-img
 {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .main-img .container-spec
 {
@@ -393,7 +393,7 @@ font-size: 17px;
     margin-left: 15%; 
     margin-top: 70px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 
 }
 .browse-cat .container h1
@@ -1251,7 +1251,7 @@ font-size: 17px;
 {
     margin-top: 70px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .recect-jobs .container h1
 {
@@ -1615,7 +1615,7 @@ font-size: 17px;
     margin-top: 70px;
     padding: 3px 0 90px 0;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .slider .p-title
 {
@@ -1739,7 +1739,7 @@ font-size: 17px;
     background-size: cover;
     position: relative;
     min-height: 450px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .orange-sec::before
 {
@@ -2328,7 +2328,7 @@ footer .foot-container .main-div2 i
 .main-img-about .container-about
 {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     
     /* background-size: cover; */
     height: 400px;
@@ -2435,7 +2435,7 @@ footer .foot-container .main-div2 i
     width: 80%;
     margin-left: 10%;
     display: flex;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
     margin-top: 50px;
 }
@@ -3043,7 +3043,7 @@ footer .foot-container .main-div2 i
 {
     margin-top: 70px;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 /* ========================== */
 /* ============================= */
@@ -3742,7 +3742,7 @@ footer .foot-container .main-div2 i
     height:470px;
     margin-top: 110px;
     margin-bottom: 40px;
-    z-index: -1;
+    /* z-index: -1; */
     position: relative;
 }
 .map .map-container > div
